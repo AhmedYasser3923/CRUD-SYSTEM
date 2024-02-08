@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD SYSTEM</title>
+    <!-- icon  -->
+    <link rel="shortcut icon" href="164-1649299_do-todo-list-icon-hd-png-download.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assests/CSS/all.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assests/CSS/main.css">
+</head>
+<body>
+    <h1>CRUD SYSTEM</h1>
+    
+    <form
+            onsubmit="event.preventDefault();onFormSubmit();"
+            autocomplete="off"
+          >
+    <div class="form0" >
+      <label>Name</label>
+      <label class="error hide" id="NameValidationError"
+                > *Please enter the Name.</label>
+              
+      <br />
+      <input type="text" class="form-ctrl" id="Name" name="Name" placeholder="Enter your Name" />
+      <br />
+      <label>Email</label>
+      <br />
+      <input type="text" class="form-ctrl" id="Email" name="Email" placeholder="Enter Your Email" />
+      <br>
+      <label>Phone number</label>
+      <br />
+      <input type="tel" class="form-ctrl" id="phone" name="phone" 
+      pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0807-354-8307"/>
+      <br />
+      <label>Salary</label>
+      <br />
+      <input type="number" class="form-ctrl" id="Salary" name="Salary" placeholder="Enter your Salary"/>
+      <br />
+      <label>City</label>
+      <br />
+      <input type="text" class="form-ctrl" id="City" name="City" placeholder="Enter your address"/>
+      <br />
+      <button  class="b0" onclick="addinfo()">Submit</button>
+    </div>
+    </form>
+    <br><br><br><br>
+    <table class="t0" id="t0"  >
+   
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone number</th>
+          <th>Salary</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody >
+  
+
+      </tbody>
+    
+    </table>
+    <script src="./assests/JS/main.js"></script>
+</body>
+</html>
